@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>网页计算器4.0</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  	<link rel="shortcut icon" href="/deqecraft.png">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+    .calculator {
+      width: 400px;
+      background-color: #36454F;
+      border-radius: 10px;
+      margin: 50px auto;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    .calculator-screen {
+      width: 100%;
+      height: 80px;
+      padding: 10px;
+      font-size: 48px;
+      color: #fff;
+      text-align: right;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      overflow: hidden;
+    }
+    .calculator-screen span {
+      display: inline-block;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      to {
+        opacity: 0;
+      }
+    }
+    .calculator-keys {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+    .calculator-keys button {
+      width: 70px;
+      height: 70px;
+      margin: 10px;
+      background-color: #fff;
+      border: none;
+      border-radius: 50%;
+      font-size: 24px;
+      color: #36454F;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+    .calculator-keys button:hover {
+      background-color: #e9e9e9;
+    }
+    .operator {
+      background-color: #FFA500;
+      color: #fff;
+    }
+    .equal-sign {
+      background-color: #FFA500;
+      color: #fff;
+      font-weight: bold;
+    }
+    .clear {
+      background-color: #A9A9A9;
+      color: #fff;
+    }
+    .decimal {
+      background-color: #eee;
+    }
+    @media (max-width: 500px) {
+      .calculator {
+        width: 90%;
+      }
+      .calculator-screen {
+        height: 60px;
+        font-size: 36px;
+      }
+      .calculator-keys button {
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body style="background-color:gray">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="https://deqecraftwr.github.io">
+		<img src="/deqecraft.png" width="30" height="30" class="d-inline-block align-top" alt="">
+		deqecraft
+	  </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item">
+	        <a class="nav-link" href="/关于我们.html">关于我们</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="/成员.html">成员</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="/项目.html">项目</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+  <div class="calculator">
+    <div class="calculator-screen"><span id="result">0</span></div>
+    <div class="calculator-keys">
+      <button onclick="appendNumber(7)">7</button>
+      <button onclick="appendNumber(8)">8</button>
+      <button onclick="appendNumber(9)">9</button>
+      <button class="operator" onclick="appendOperator('+')">+</button>
+      <button onclick="appendNumber(4)">4</button>
+      <button onclick="appendNumber(5)">5</button>
+      <button onclick="appendNumber(6)">6</button>
+      <button class="operator" onclick="appendOperator('-')">-</button>
+      <button onclick="appendNumber(1)">1</button>
+      <button onclick="appendNumber(2)">2</button>
+      <button onclick="appendNumber(3)">3</button>
+      <button class="operator" onclick="appendOperator('*')">&times;</button>
+      <button class="decimal" onclick="appendDecimal()">.</button>
+      <button onclick="appendNumber(0)">0</button>
+      <button class="equal-sign" onclick="calculate()">=</button>
+      <button class="operator" onclick="appendOperator('/')">&divide;</button>
+      <button class="clear" onclick="clearResult()">C(复位)</button>
+    </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    let currentNumber = '0';
+    let previousNumber = '0';
+    let operator = null;
+    let shouldResetScreen = false;
+
+    function appendNumber(number) {
+      if (currentNumber === '0' || shouldResetScreen) {
+        resetScreen();
+      }
+      currentNumber += number;
+      updateScreen(currentNumber);
+    }
+
+    function appendOperator(operatorChar) {
+      if (operator !== null) {
+        calculate();
+      }
+      previousNumber = currentNumber;
+      operator = operatorChar;
+      currentNumber = '';
+    }
+
+    function appendDecimal() {
+      if (shouldResetScreen) {
+        resetScreen();
+      }
+      if (currentNumber === '') {
+        currentNumber = '0';
+      }
+      if (currentNumber.indexOf('.') === -1) {
+        currentNumber += '.';
+      }
+      updateScreen(currentNumber);
+    }
+
+    function calculate() {
+      let result = '';
+      switch (operator) {
+        case '+':
+          result = parseFloat(previousNumber) + parseFloat(currentNumber);
+          break;
+        case '-':
+          result = parseFloat(previousNumber) - parseFloat(currentNumber);
+          break;
+        case '*':
+          result = parseFloat(previousNumber) * parseFloat(currentNumber);
+          break;
+        case '/':
+          result = parseFloat(previousNumber) / parseFloat(currentNumber);
+          break;
+        default:
+          return;
+      }
+      currentNumber = result.toString();
+      operator = null;
+      updateScreen(currentNumber);
+      shouldResetScreen = true;
+    }
+
+    function clearResult() {
+      currentNumber = '0';
+      previousNumber = '0';
+      operator = null;
+      updateScreen(currentNumber);
+    }
+
+    function resetScreen() {
+      currentNumber = '';
+      shouldResetScreen = false;
+    }
+
+    function updateScreen(displayValue) {
+      let displayString = displayValue.toString();
+      if (displayString.length > 12) {
+        displayString = displayString.substring(0, 12);
+      }
+      document.getElementById('result').textContent = displayString;
+    }
+  </script>
+</body>
+</html>
