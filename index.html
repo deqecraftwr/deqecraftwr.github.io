@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <style>
-         .r{text-align:center;color:orange;}
-         /* body{background-image:url('deqecraft.png');background-repeat:no-repeat;} */
-    </style>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>deqecraft官网</title>
-    <!-- CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="shortcut icon" href="deqecraft.png">
+	<script src="/jQuery/jquery.min.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="shortcut icon" href="/static/deqecraft.png">
+    <style>
+		.r{text-align:center;color:orange;}
+        .tab-content {display: none;}
+        .active {display: block;}
+		.o{color:orange;}
+		body{text-align:center}
+    </style>
 </head>
-<body style="text-align:center;">
+
+<body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	  <a class="navbar-brand" href="https://deqecraftwr.github.io">
-		<img src="/deqecraft.png" width="30" height="30" class="d-inline-block align-top" alt="">
+	  <a class="navbar-brand" href="#" onclick="switchTab(event, 'home')">
+		<img src="/static/deqecraft.png" width="30" height="30" class="d-inline-block align-top" alt="">
 		deqecraft
 	  </a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,53 +29,451 @@
 	  <div class="collapse navbar-collapse" id="navbarNav">
 	    <ul class="navbar-nav">
 	      <li class="nav-item">
-	        <a class="nav-link" href="/关于我们.html">关于我们</a>
+	        <a class="nav-link" href="#" onclick="switchTab(event, 'we')">关于我们</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="/成员.html">成员</a>
+	        <a class="nav-link" href="#" onclick="switchTab(event, 'cy')">成员</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="/项目.html">项目</a>
+	        <a class="nav-link" href="#" onclick="switchTab(event, 'code')">项目</a>
 	      </li>
 	    </ul>
 	  </div>
 	</nav>
-	<h2 class="r">deqecraft官网（CZ工作室旗下）</h2>
-	<a href="https://czoffice.top" class="r" style="color:blue;font-size:30px">CZ官网</a>
-	<h2 class="r">CZ官网还在测试中，可能有部分功能不完善</h2>
-	<img src="deqecraft.png" style="text-align:center;">
-	<br><br><br><br><br><br><br><br>
-	<!-- 警告框 -->
-	<div class="alert alert-success" role="alert">
-	  <h4 class="alert-heading">公告！</h4>
-	  <p>deqecraft工作室公告</p>
-	  <hr>
-	  <p class="mb-0">规定&事件&改革</p>
+	
+    <div id="home" class="tab-content active">
+		<h2 class="r">deqecraft官网（CZ工作室旗下）</h2>
+		<a href="https://czoffice.top" class="r" style="color:blue;font-size:30px">CZ官网</a>
+		<h2 class="r">CZ官网还在测试中，可能有部分功能不完善</h2>
+		<img src="/static/deqecraft.png" style="text-align:center;">
+		<br><br><br><br><br><br><br><br>
+		<!-- 警告框 -->
+		<div class="alert alert-success" role="alert">
+		  <h4 class="alert-heading">公告！</h4>
+		  <p>deqecraft工作室公告</p>
+		  <hr>
+		  <p class="mb-0">规定&事件&改革</p>
+		</div>
+		<br><br><br><br>
+		<div class="alert alert-primary" role="alert">
+		  10月5号deqecraft工作室成立
+		</div><br>
+		<div class="alert alert-primary" role="alert">
+		  10月7号deqecraft官网初步完善
+		</div><br>
+		<div class="alert alert-primary" role="alert">
+		  10月15号deqecraft工作室建qq群
+		</div><br>
+		<div class="alert alert-primary" role="alert">
+		  10月18号deqecraft工作室建泡泡群
+		</div><br>
+		<div class="alert alert-primary" role="alert">
+		  11月11号deqecraft工作室转CZ工作室旗下
+		</div><br>
+		<div class="alert alert-primary" role="alert">
+		  11月14号deqecraft工作室换新logo
+		</div><br>
+		<div class="alert alert-primary" role="alert">
+		  12月9号deqecraft工作室官网“项目”功能开放
+		</div><br>
+		<h6 style="color:orange">……未待完善……</h6>
+    </div>
+
+    <div id="we" class="tab-content" style="background-color:slategrey;text-align:center;">
+		<h1 class="o">关于我们</h1><br/>
+		<h2 class="o">我们是来自学而思编程社区的小团体</h1>
+		<h1 style="color:coral;font-size:15px;text-decoration: line-through;">人数不多也就俩……</h1>
+		<h2 class="o">但是我们关爱每一个成员</h2>
+		<h2 class="o">让你找到家的感觉</h2>
+		<p style="font-size:30px;" class="o">我们任务宽松</p><a href="#" style="text-decoration:line-through;color:orange;font-size:30px;">基本没啥除了技术支持</a>
+		<h2 class="o">希望看到这里的你能…………</h2>
+		<h2 class="o">能……考虑加入我们？</h2>
+		<a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=nfzoTBYXpJnjyNhuxJUKMSiMQZx1jAQN&authKey=w80WHCqOuiDnxjjuAv3jnY8XUzKrWTXvwAzTe2QVU13RQEPW560hj5yQ%2F4nhKqsk&noverify=0&group_code=713972363" style="font-size:30px;" class="o">加入我们</a>
+    </div>
+
+    <div id="cy" class="tab-content" style="text-align:center">
+		<h1 style="color:orange">成员列表</h1>
+			<div class="row">
+				<div class="col-3">
+					<!-- 陈溯 -->
+					<div class="card" style="width: 18rem;">
+				  <div class="card-body">
+					<h5 class="card-title">陈溯</h5>
+					<h6 class="card-subtitle mb-2 text-muted">室长</h6>
+					<p class="card-text">会的语言：python,c++,scratch,javascript,html,css</p>
+					<p class="card-text">联系方式：qq:3445205294</p>
+					<a href="https://deq3000ren7cs.github.io" class="card-link">个人主页</a>
+					<a href="https://code.xueersi.com/space/8582930" class="card-link">C站主页</a>
+				  </div>
+				</div>
+				</div>
+		<!--陈溯结束-->
+				<div class="col-3">
+				<!--斯亦轩-->
+				<div class="card" style="width: 18rem;">
+				  <div class="card-body">
+					<h5 class="card-title">斯亦轩</h5>
+					<h6 class="card-subtitle mb-2 text-muted">scratch部成员</h6>
+					<p class="card-text">会的语言：python，scratch</p>
+					<p class="card-text">联系方式：</p>
+					<a href="#" class="card-link">个人主页：无</a>
+					<a href="https://code.xueersi.com/space/7977794" class="card-link">C站主页</a>
+				  </div>
+				</div>
+				</div>
+		<!--斯亦轩结束-->
+			<div class="col-3">
+				<!--张庭嘉-->
+				<div class="card" style="width: 18rem;">
+				  <div class="card-body">
+					<h5 class="card-title">张庭嘉</h5>
+					<h6 class="card-subtitle mb-2 text-muted">scratch部成员</h6>
+					<p class="card-text">会的语言：python，scratch</p>
+					<p class="card-text">联系方式：</p>
+					<a href="#" class="card-link">个人主页：无</a>
+					<a href="https://code.xueersi.com/space/10461750" class="card-link">C站主页</a>
+				  </div>
+				</div>
+				</div>
+		<!-- 张庭嘉结束-->
+			<div class="col-3">
+				<!--史罗宇-->
+				<div class="card" style="width: 18rem;">
+				  <div class="card-body">
+					<h5 class="card-title">史罗宇</h5>
+					<h6 class="card-subtitle mb-2 text-muted">c++部成员</h6>
+					<p class="card-text">会的语言：c++，scratch</p>
+					<p class="card-text">联系方式：</p>
+					<a href="#" class="card-link">个人主页：无</a>
+					<a href="https://code.xueersi.com/space/8222496" class="card-link">C站主页</a>
+				  </div>
+				</div>
+				</div>
+		<!-- 史罗宇结束-->
+			<div class="col-3">
+				<!--叶凌-->
+				<div class="card" style="width: 18rem;">
+				  <div class="card-body">叶凌</h5>
+					<h6 class="card-subtitle mb-2 text-muted">pthon部成员</h6>
+					<p class="card-text">会的语言：python,scratch</p>
+					<p class="card-text">联系方式：</p>
+					<a href="#" class="card-link">个人主页：无</a>
+					<a href="https://code.xueersi.com/space/9734517" class="card-link">C站主页</a>
+				  </div>
+				</div>
+				</div>
+		<!-- 叶凌结束-->
+			<div class="col-3">
+				<!--陈韵桧-->
+				<div class="card" style="width: 18rem;">
+				  <div class="card-body">陈韵桧</h5>
+					<h6 class="card-subtitle mb-2 text-muted">scratch部成员</h6>
+					<p class="card-text">会的语言：scratch</p>
+					<p class="card-text">联系方式：</p>
+					<a href="#" class="card-link">个人主页：无</a>
+					<a href="https://code.xueersi.com/space/9861328" class="card-link">C站主页</a>
+				  </div>
+				</div>
+				</div>
+		<!-- 陈韵桧结束-->
+			<div class="col-3">
+				<!--林初晖-->
+				<div class="card" style="width: 18rem;">
+				  <div class="card-body">林初晖</h5>
+					<h6 class="card-subtitle mb-2 text-muted">python部成员</h6>
+					<p class="card-text">会的语言：scratch,python</p>
+					<p class="card-text">联系方式：</p>
+					<a href="#" class="card-link">个人主页：无</a>
+					<a href="https://code.xueersi.com/space/50607527" class="card-link">C站主页</a>
+				  </div>
+				</div>
+				</div>
+		<!-- 林初晖结束-->
+			<div class="col-3">
+				<!--郑瑾萱-->
+				<div class="card" style="width: 18rem;">
+				  <div class="card-body">郑瑾萱</h5>
+					<h6 class="card-subtitle mb-2 text-muted">python部成员</h6>
+					<p class="card-text">会的语言：scratch,python</p>
+					<p class="card-text">联系方式：</p>
+					<a href="#" class="card-link">个人主页：无</a>
+					<a href="https://code.xueersi.com/space/16174980" class="card-link">C站主页</a>
+				  </div>
+				</div>
+				</div>
+		<!-- 郑瑾萱结束-->
+			<div class="col-3">
+				<!--吴政洋-->
+				<div class="card" style="width: 18rem;">
+				  <div class="card-body">吴政洋</h5>
+					<h6 class="card-subtitle mb-2 text-muted">python部成员</h6>
+					<p class="card-text">会的语言：scratch,python</p>
+					<p class="card-text">联系方式：</p>
+					<a href="#" class="card-link">个人主页：无</a>
+					<a href="https://code.xueersi.com/space/3137701" class="card-link">C站主页</a>
+				  </div>
+				</div>
+				</div>
+		<!-- 吴政洋结束-->
+			</div>
 	</div>
-	<br><br><br><br>
-	<div class="alert alert-primary" role="alert">
-	  10月5号deqecraft工作室成立
-	</div><br>
-	<div class="alert alert-primary" role="alert">
-	  10月7号deqecraft官网初步完善
-	</div><br>
-	<div class="alert alert-primary" role="alert">
-	  10月15号deqecraft工作室建qq群
-	</div><br>
-	<div class="alert alert-primary" role="alert">
-	  10月18号deqecraft工作室建泡泡群
-	</div><br>
-	<div class="alert alert-primary" role="alert">
-	  11月11号deqecraft工作室转CZ工作室旗下
-	</div><br>
-	<div class="alert alert-primary" role="alert">
-	  11月14号deqecraft工作室换新logo
-	</div><br>
-	<div class="alert alert-primary" role="alert">
-	  12月9号deqecraft工作室官网“项目”功能开放
-	</div><br>
-	<h6 style="color:orange">……未待完善……</h6>
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <div id="code" class="tab-content">
+		<div class="alert alert-danger" role="alert">
+		  如果你发现我们工作室成员的作品没有上墙 <a href="#" class="alert-link">那么请你思考</a>他/她的作品是否是原创？封面是不是我们logo？
+		  <p>如果你确定符合要求请联系<a href="#" class="alert-link">3445205294@qq.com</a>并发链接给我</p>
+		</div>
+		<div class="row">
+			<div class="col-3">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row no-gutters">
+						<div class="col-md-4">
+							<img src="/static/deqecraft.png" width="125" height="230">
+						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+							<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49494330&version=python&form=python&langType=python">
+								<h5 class="card-title">源码破解器4.0</h5>
+							</a>
+							<p class="card-text">这是一个可以任意破解C站作品的工具，没有UI将就一下吧！</p>
+							<p class="card-text">作者:<a href="https://code.xueersi.com/space/8582930">陈溯</a></p>
+							<p class="card-text"><small class="text-muted">Last updated 11 mins ago</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row no-gutters">
+						<div class="col-md-4">
+							<img src="/static/deqecraft.png" width="125" height="230">
+						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+							<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49310043&version=webpy&form=webpy&langType=webpy">
+								<h5 class="card-title">密码生成器高级版</h5>
+							</a>
+							<p class="card-text">这是一个可以根据密码位数生成密码的工具，该工具原理简单，实用性强！</p>
+							<p class="card-text">作者:<a href="https://code.xueersi.com/space/8582930">陈溯</a></p>
+							<p class="card-text"><small class="text-muted">Last updated 11 mins ago</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row no-gutters">
+						<div class="col-md-4">
+							<img src="/static/deqecraft.png" width="125" height="230">
+						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+							<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49457919&version=offline&form=python&langType=python">
+								<h5 class="card-title">仿真计算器</h5>
+							</a>
+							<p class="card-text">这是一个仿真计算器！</p>
+							<p class="card-text">作者:<a href="https://code.xueersi.com/space/8582930">陈溯</a></p>
+							<a class="card-text" href="/仿真计算器.html">在线浏览</a>
+							<p class="card-text"><small class="text-muted">Last updated 11 mins ago</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row no-gutters">
+						<div class="col-md-4">
+							<img src="/static/deqecraft.png" width="125" height="230">
+						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+							<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49494421&version=webpy&form=webpy&langType=webpy">
+								<h5 class="card-title">海龟写字模版</h5>
+							</a>
+							<p class="card-text">这是一个海龟写字模版！适合新手。</p>
+							<p class="card-text">作者:<a href="https://code.xueersi.com/space/8582930">陈溯</a></p>
+							<p class="card-text"><small class="text-muted">Last updated 11 mins ago</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row no-gutters">
+						<div class="col-md-4">
+							<img src="/static/deqecraft.png" width="125" height="230">
+						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+							<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49449161&version=webpy&form=webpy&langType=webpy">
+								<h5 class="card-title">卡牌对战（双人）3.1.0</h5>
+							</a>
+							<p class="card-text">这是一个卡片对战游戏！</p>
+							<p class="card-text">作者:<a href="https://code.xueersi.com/space/50607527">林初辉</a></p>
+							<p class="card-text"><small class="text-muted">Last updated 11 mins ago</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row no-gutters">
+						<div class="col-md-4">
+							<img src="/static/deqecraft.png" width="125" height="230">
+						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+							<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49758773&version=offline&form=python&langType=python">
+								<h5 class="card-title">源码破解器5.0网页版</h5>
+							</a>
+							<p class="card-text">这是一个基于<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49494330&version=python&form=python&langType=python">源码破解器4.0</a>的改进版！</p>
+							<p class="card-text">作者:<a href="https://code.xueersi.com/space/50607527">陈溯</a></p>
+							<a class="card-text" href="/源码破解器5.0网页版.html">在线浏览</a>
+							<p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row no-gutters">
+						<div class="col-md-4">
+							<img src="/static/deqecraft.png" width="125" height="230">
+						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+							<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49758545&version=offline&form=python&langType=python">
+								<h5 class="card-title">源码破解器5.0(有UI)</h5>
+							</a>
+							<p class="card-text">这是一个基于<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49494330&version=python&form=python&langType=python">源码破解器4.0</a>的改进版！</p>
+							<p class="card-text">作者:<a href="https://code.xueersi.com/space/50607527">陈溯</a></p>
+							<p class="card-text"><a href="https://livefile.xesimg.com/programme/python_assets/85230b692f2397dbfcae05d5e9dd0524.exe">下载</a></p>
+							<p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row no-gutters">
+						<div class="col-md-4">
+							<img src="/static/deqecraft.png" width="125" height="230">
+						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+							<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49768603&version=offline&form=python&langType=python">
+								<h5 class="card-title">加密程序（有ui）</h5>
+							</a>
+							<p class="card-text">这是一个使用了一种称为Fernet的对称加密模式的程序。</p>
+							<p class="card-text">作者:<a href="https://code.xueersi.com/space/50607527">陈溯</a></p>
+							<p class="card-text"><a href="https://livefile.xesimg.com/programme/python_assets/5336385511d3db0d78706c4b61f0ec55.exe">下载</a></p>
+							<p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row no-gutters">
+						<div class="col-md-4">
+							<img src="/static/deqecraft.png" width="125" height="230">
+						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+							<a href="https://code.xueersi.com/home/project/detail?lang=scratch&pid=23648601&version=3.0&langType=scratch">
+								<h5 class="card-title">_传说之下 全然不信（正版）</h5>
+							</a>
+							<p class="card-text">这是一个是一款像素画面的冒险闯关手机游戏。</p>
+							<p class="card-text">作者:<a href="https://code.xueersi.com/space/3137701">吴政洋</a></p>
+							<p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row no-gutters">
+						<div class="col-md-4">
+							<img src="/static/deqecraft.png" width="125" height="230">
+						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+							<a href="https://code.xueersi.com/home/project/detail?lang=scratch&pid=23649328&version=3.0&langType=scratch">
+								<h5 class="card-title">星球大战红光剑版（已汉化）</h5>
+							</a>
+							<p class="card-text">不详</p>
+							<p class="card-text">作者:<a href="https://code.xueersi.com/space/3137701">吴政洋</a></p>
+							<p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row no-gutters">
+						<div class="col-md-4">
+							<img src="/static/deqecraft.png" width="125" height="230">
+						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+							<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49826972&version=offline&form=python&langType=python">
+								<h5 class="card-title">#已授权#创造一颗属于你的星球！</h5>
+							</a>
+							<p class="card-text">改进版，<a href="https://livefile.xesimg.com/programme/python_assets/9040646e5a28965b80998ab42a860d96.html">申请授权资料</a></p>
+							<p class="card-text">作者:<a href="https://code.xueersi.com/space/50607527">林初晖</a></p>
+							<p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row no-gutters">
+						<div class="col-md-4">
+							<img src="/static/deqecraft.png" width="125" height="230">
+						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+							<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49826560&version=webpy&form=webpy&langType=webpy">
+								<h5 class="card-title">cmd蓝屏教程</h5>
+							</a>
+							<p class="card-text">教你如何手动蓝屏</a></p>
+							<p class="card-text">作者:<a href="https://code.xueersi.com/space/7977794">斯亦轩</a></p>
+							<p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <script>
+        function switchTab(event, tabId) {
+            // 阻止默认链接行为
+            event.preventDefault();
+
+            // 隐藏所有的选项卡内容
+            var tabContents = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active");
+            }
+
+            // 显示当前选中的选项卡内容
+            document.getElementById(tabId).classList.add("active");
+        }
+    </script>
+	<script src="Bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
