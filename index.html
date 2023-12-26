@@ -13,10 +13,17 @@
         .tab-content {display: none;}
         .active {display: block;}
 		.o{color:orange;}
-		body{text-align:center}
+		* {box-sizing: border-box;}
+		body {font-family: Arial, sans-serif;background-color: #f4f4f4;margin: 0;padding: 0;text-align:center;}
+		.project-list {display: flex;flex-wrap: wrap;justify-content: center;}
+		.project-item {width: 30%;margin: 1em;background-color: #fff;border-radius: 0.5em;overflow: hidden;box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);transition: all 0.3s ease;}
+		.project-item:hover {transform: translateY(-0.2em);}
+		.project-item img {width: 100%;height: auto;}
+		.project-item .info {padding: 1em;}
+		.project-item h3 {margin: 0;font-size: 1.2em;}
+		.project-item p {margin-top: 1em;line-height: 1.5;}
     </style>
 </head>
-
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 	  <a class="navbar-brand" href="#" onclick="switchTab(event, 'home')">
@@ -75,6 +82,9 @@
 		</div><br>
 		<div class="alert alert-primary" role="alert">
 		  12月9号deqecraft工作室官网“项目”功能开放
+		</div><br>
+		<div class="alert alert-primary" role="alert">
+		  12月26号deqecraft工作室官网“项目”功能Bootstrap的原版卡片退出，更换了另种样式
 		</div><br>
 		<h6 style="color:orange">……未待完善……</h6>
     </div>
@@ -232,262 +242,140 @@
 
     <div id="code" class="tab-content">
 		<div class="alert alert-danger" role="alert">
-		  如果你发现我们工作室成员的作品没有上墙 <a href="#" class="alert-link">那么请你思考</a>他/她的作品是否是原创？封面是不是我们logo？
-		  <p>如果你确定符合要求请联系<a href="#" class="alert-link">3445205294@qq.com</a>并发链接给我</p>
+			如果你发现我们工作室成员的作品没有上墙 <a href="#" class="alert-link">那么请你思考</a>他/她的作品是否是原创？封面是不是我们logo？
+			<p>如果你确定符合要求请联系<a href="#" class="alert-link">3445205294@qq.com</a>并发链接给我</p>
 		</div>
-		<div class="row">
-			<div class="col-3">
-				<div class="card mb-3" style="max-width: 540px;">
-					<div class="row no-gutters">
-						<div class="col-md-4">
-							<img src="/static/deqecraft.png" width="125" height="230">
-						</div>
-						<div class="col-md-8">
-							<div class="card-body">
-							<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49494330&version=python&form=python&langType=python" target="_blank">
-								<h5 class="card-title">源码破解器4.0</h5>
-							</a>
-							<p class="card-text">这是一个可以任意破解C站作品的工具，没有UI将就一下吧！</p>
-							<p class="card-text">作者:<a href="https://code.xueersi.com/space/8582930" target="_blank">陈溯</a></p>
-							<p class="card-text"><small class="text-muted">Last updated 11 mins ago</small></p>
-							</div>
-						</div>
+			  <div class="project-list">
+				<div class="project-item">
+				  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49494330&version=python&form=python&langType=python" target="_blank">
+					<img src="/static/deqecraft.png" alt="Project 2">
+					<div class="info">
+					  <h3>源码破解器4.0</h3>
+			      </a>
+					  <p>这是一个可以任意破解C站作品的工具，没有UI将就一下吧！</p>
+					</div>
+				</div>
+				<div class="project-item">
+				  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49310043&version=webpy&form=webpy&langType=webpy" target="_blank">
+					<img src="/static/deqecraft.png" alt="Project 2">
+					<div class="info">
+					  <h3>密码生成器高级版</h3>
+				  </a>
+					  <p>这是一个可以根据密码位数生成密码的工具，该工具原理简单，实用性强！</p>
+					</div>
+				</div>
+
+				<div class="project-item">
+				  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49457919&version=offline&form=python&langType=python" target="_blank">
+					<img src="/static/deqecraft.png" alt="Project 2">
+					<div class="info">
+					  <h3>仿真计算器</h3>
+				  </a>
+					  <p>这是一个仿真计算器！</p>
+					</div>
+				</div>
+
+
+				<div class="project-item">
+				  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49494421&version=webpy&form=webpy&langType=webpy" target="_blank">
+					<img src="/static/deqecraft.png" alt="Project 2">
+					<div class="info">
+					  <h3>海龟写字模版</h3>
+				  </a>
+					  <p>这是一个海龟写字模版！适合新手。</p>
+					</div>
+				</div>
+
+
+				<div class="project-item">
+				  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49449161&version=webpy&form=webpy&langType=webp" target="_blank">
+					<img src="/static/deqecraft.png" alt="Project 2">
+					<div class="info">
+					  <h3>卡牌对战（双人）3.1.0</h3>
+				  </a>
+					  <p>这是一个卡片对战游戏！</p>
+					</div>
+				</div>
+
+
+				<div class="project-item">
+				  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49758773&version=offline&form=python&langType=python" target="_blank">
+					<img src="/static/deqecraft.png" alt="Project 2">
+					<div class="info">
+					  <h3>源码破解器5.0网页版</h3>
+				  </a>
+					  <p>这是一个基于<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49494330&version=python&form=python&langType=python" target="_blank">源码破解器4.0</a>的改进版！</p>
+					</div>
+				</div>
+
+
+				<div class="project-item">
+				  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49758545&version=offline&form=python&langType=python" target="_blank">
+					<img src="/static/deqecraft.png" alt="Project 2">
+					<div class="info">
+					  <h3>源码破解器5.0(有UI)</h3>
+				   </a>
+					  <p>这是一个基于<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49494330&version=python&form=python&langType=python" target="_blank">源码破解器4.0</a>的改进版！</p>
+					</div>
+				</div>
+
+
+				<div class="project-item">
+				  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49768603&version=offline&form=python&langType=python" target="_blank">
+					<img src="/static/deqecraft.png" alt="Project 2">
+					<div class="info">
+					  <h3>加密程序（有ui）</h3>
+				   </a>
+					  <p>这是一个使用了一种称为Fernet的对称加密模式的程序。</p>
+					  <p class="card-text"><a href="https://livefile.xesimg.com/programme/python_assets/5336385511d3db0d78706c4b61f0ec55.exe" target="_blank">下载</a></p>
+					</div>
+				</div>
+
+
+				<div class="project-item">
+				  <a href="https://code.xueersi.com/home/project/detail?lang=scratch&pid=23648601&version=3.0&langType=scratch" target="_blank">
+					<img src="/static/deqecraft.png" alt="Project 2">
+					<div class="info">
+					  <h3>_传说之下 全然不信（正版）</h3>
+				  </a>
+					  <p>这是一个是一款像素画面的冒险闯关手机游戏。</p>
+					</div>
+				</div>
+
+
+				<div class="project-item">
+				  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49826972&version=offline&form=python&langType=python" target="_blank">
+					<img src="/static/deqecraft.png" alt="Project 2">
+					<div class="info">
+					  <h3>#已授权#创造一颗属于你的星球！</h3>
+				  </a>
+					  <p>改进版，<a href="https://livefile.xesimg.com/programme/python_assets/9040646e5a28965b80998ab42a860d96.html" target="_blank">申请授权资料</a></p>
+					</div>
+				</div>
+
+
+				<div class="project-item">
+				  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49826560&version=webpy&form=webpy&langType=webpy" target="_blank">
+					<img src="/static/deqecraft.png" alt="Project 2">
+					<div class="info">
+					  <h3>cmd蓝屏教程</h3>
+				   </a>
+					  <p>教你如何手动蓝屏</p>
+					</div>
+				</div>
+
+
+				<div class="project-item">
+					<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=50034687&version=python&form=python&langType=python" target="_blank">
+					<img src="/static/deqecraft.png" alt="Project 2">
+					<div class="info">
+						<h3>破违禁词程序</h3>
+					</a>
+						<p>xes有限制违禁词不能发送的机制，该程序利用一个字符把违禁词隔开便可</p>
 					</div>
 				</div>
 			</div>
-			<div class="col-3">
-				<div class="card mb-3" style="max-width: 540px;">
-					<div class="row no-gutters">
-						<div class="col-md-4">
-							<img src="/static/deqecraft.png" width="125" height="230">
-						</div>
-						<div class="col-md-8">
-							<div class="card-body">
-							<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49310043&version=webpy&form=webpy&langType=webpy" target="_blank">
-								<h5 class="card-title">密码生成器高级版</h5>
-							</a>
-							<p class="card-text">这是一个可以根据密码位数生成密码的工具，该工具原理简单，实用性强！</p>
-							<p class="card-text">作者:<a href="https://code.xueersi.com/space/8582930" target="_blank">陈溯</a></p>
-							<p class="card-text"><small class="text-muted">Last updated 11 mins ago</small></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-3">
-				<div class="card mb-3" style="max-width: 540px;">
-					<div class="row no-gutters">
-						<div class="col-md-4">
-							<img src="/static/deqecraft.png" width="125" height="230">
-						</div>
-						<div class="col-md-8">
-							<div class="card-body">
-							<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49457919&version=offline&form=python&langType=python" target="_blank">
-								<h5 class="card-title">仿真计算器</h5>
-							</a>
-							<p class="card-text">这是一个仿真计算器！</p>
-							<p class="card-text">作者:<a href="https://code.xueersi.com/space/8582930" target="_blank">陈溯</a></p>
-							<a class="card-text" href="/仿真计算器.html">在线浏览</a>
-							<p class="card-text"><small class="text-muted">Last updated 11 mins ago</small></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-3">
-				<div class="card mb-3" style="max-width: 540px;">
-					<div class="row no-gutters">
-						<div class="col-md-4">
-							<img src="/static/deqecraft.png" width="125" height="230">
-						</div>
-						<div class="col-md-8">
-							<div class="card-body">
-							<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49494421&version=webpy&form=webpy&langType=webpy" target="_blank">
-								<h5 class="card-title">海龟写字模版</h5>
-							</a>
-							<p class="card-text">这是一个海龟写字模版！适合新手。</p>
-							<p class="card-text">作者:<a href="https://code.xueersi.com/space/8582930" target="_blank">陈溯</a></p>
-							<p class="card-text"><small class="text-muted">Last updated 11 mins ago</small></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-3">
-				<div class="card mb-3" style="max-width: 540px;">
-					<div class="row no-gutters">
-						<div class="col-md-4">
-							<img src="/static/deqecraft.png" width="125" height="230">
-						</div>
-						<div class="col-md-8">
-							<div class="card-body">
-							<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49449161&version=webpy&form=webpy&langType=webpy" target="_blank">
-								<h5 class="card-title">卡牌对战（双人）3.1.0</h5>
-							</a>
-							<p class="card-text">这是一个卡片对战游戏！</p>
-							<p class="card-text">作者:<a href="https://code.xueersi.com/space/50607527" target="_blank">林初辉</a></p>
-							<p class="card-text"><small class="text-muted">Last updated 11 mins ago</small></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-3">
-				<div class="card mb-3" style="max-width: 540px;">
-					<div class="row no-gutters">
-						<div class="col-md-4">
-							<img src="/static/deqecraft.png" width="125" height="230">
-						</div>
-						<div class="col-md-8">
-							<div class="card-body">
-							<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49758773&version=offline&form=python&langType=python" target="_blank">
-								<h5 class="card-title">源码破解器5.0网页版</h5>
-							</a>
-							<p class="card-text">这是一个基于<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49494330&version=python&form=python&langType=python" target="_blank">源码破解器4.0</a>的改进版！</p>
-							<p class="card-text">作者:<a href="https://code.xueersi.com/space/50607527" target="_blank">陈溯</a></p>
-							<a class="card-text" href="/源码破解器5.0网页版.html">在线浏览</a>
-							<p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-3">
-				<div class="card mb-3" style="max-width: 540px;">
-					<div class="row no-gutters">
-						<div class="col-md-4">
-							<img src="/static/deqecraft.png" width="125" height="230">
-						</div>
-						<div class="col-md-8">
-							<div class="card-body">
-							<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49758545&version=offline&form=python&langType=python" target="_blank">
-								<h5 class="card-title">源码破解器5.0(有UI)</h5>
-							</a>
-							<p class="card-text">这是一个基于<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49494330&version=python&form=python&langType=python" target="_blank">源码破解器4.0</a>的改进版！</p>
-							<p class="card-text">作者:<a href="https://code.xueersi.com/space/50607527" target="_blank">陈溯</a></p>
-							<p class="card-text"><a href="https://livefile.xesimg.com/programme/python_assets/85230b692f2397dbfcae05d5e9dd0524.exe" target="_blank">下载</a></p>
-							<p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-3">
-				<div class="card mb-3" style="max-width: 540px;">
-					<div class="row no-gutters">
-						<div class="col-md-4">
-							<img src="/static/deqecraft.png" width="125" height="230">
-						</div>
-						<div class="col-md-8">
-							<div class="card-body">
-							<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49768603&version=offline&form=python&langType=python" target="_blank">
-								<h5 class="card-title">加密程序（有ui）</h5>
-							</a>
-							<p class="card-text">这是一个使用了一种称为Fernet的对称加密模式的程序。</p>
-							<p class="card-text">作者:<a href="https://code.xueersi.com/space/50607527" target="_blank">陈溯</a></p>
-							<p class="card-text"><a href="https://livefile.xesimg.com/programme/python_assets/5336385511d3db0d78706c4b61f0ec55.exe" target="_blank">下载</a></p>
-							<p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-3">
-				<div class="card mb-3" style="max-width: 540px;">
-					<div class="row no-gutters">
-						<div class="col-md-4">
-							<img src="/static/deqecraft.png" width="125" height="230">
-						</div>
-						<div class="col-md-8">
-							<div class="card-body">
-							<a href="https://code.xueersi.com/home/project/detail?lang=scratch&pid=23648601&version=3.0&langType=scratch" target="_blank">
-								<h5 class="card-title">_传说之下 全然不信（正版）</h5>
-							</a>
-							<p class="card-text">这是一个是一款像素画面的冒险闯关手机游戏。</p>
-							<p class="card-text">作者:<a href="https://code.xueersi.com/space/3137701" target="_blank">吴政洋</a></p>
-							<p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-3">
-				<div class="card mb-3" style="max-width: 540px;">
-					<div class="row no-gutters">
-						<div class="col-md-4">
-							<img src="/static/deqecraft.png" width="125" height="230">
-						</div>
-						<div class="col-md-8">
-							<div class="card-body">
-							<a href="https://code.xueersi.com/home/project/detail?lang=scratch&pid=23649328&version=3.0&langType=scratch" target="_blank">
-								<h5 class="card-title">星球大战红光剑版（已汉化）</h5>
-							</a>
-							<p class="card-text">不详</p>
-							<p class="card-text">作者:<a href="https://code.xueersi.com/space/3137701" target="_blank">吴政洋</a></p>
-							<p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-3">
-				<div class="card mb-3" style="max-width: 540px;">
-					<div class="row no-gutters">
-						<div class="col-md-4">
-							<img src="/static/deqecraft.png" width="125" height="230">
-						</div>
-						<div class="col-md-8">
-							<div class="card-body">
-							<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49826972&version=offline&form=python&langType=python" target="_blank">
-								<h5 class="card-title">#已授权#创造一颗属于你的星球！</h5>
-							</a>
-							<p class="card-text">改进版，<a href="https://livefile.xesimg.com/programme/python_assets/9040646e5a28965b80998ab42a860d96.html" target="_blank">申请授权资料</a></p>
-							<p class="card-text">作者:<a href="https://code.xueersi.com/space/50607527" target="_blank">林初晖</a></p>
-							<p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-3">
-				<div class="card mb-3" style="max-width: 540px;">
-					<div class="row no-gutters">
-						<div class="col-md-4">
-							<img src="/static/deqecraft.png" width="125" height="230">
-						</div>
-						<div class="col-md-8">
-							<div class="card-body">
-							<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49826560&version=webpy&form=webpy&langType=webpy" target="_blank">
-								<h5 class="card-title">cmd蓝屏教程</h5>
-							</a>
-							<p class="card-text">教你如何手动蓝屏</a></p>
-							<p class="card-text">作者:<a href="https://code.xueersi.com/space/7977794" target="_blank">斯亦轩</a></p>
-							<p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-3">
-				<div class="card mb-3" style="max-width: 540px;">
-					<div class="row no-gutters">
-						<div class="col-md-4">
-							<img src="/static/deqecraft.png" width="125" height="230">
-						</div>
-						<div class="col-md-8">
-							<div class="card-body">
-							<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=50034687&version=python&form=python&langType=python" target="_blank">
-								<h5 class="card-title">破违禁词程序</h5>
-							</a>
-							<p class="card-text">xes有限制违禁词不能发送的机制，该程序利用一个字符把违禁词隔开便可</a></p>
-							<p class="card-text">作者:<a href="https://code.xueersi.com/space/7977794" target="_blank">斯亦轩</a></p>
-							<p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+
 	</div>
     <script>
         function switchTab(event, tabId) {
@@ -504,7 +392,7 @@
             document.getElementById(tabId).classList.add("active");
         }
     </script>
-	<script src="Bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
+	<script src="/Bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
