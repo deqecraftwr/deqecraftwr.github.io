@@ -22,6 +22,12 @@
 		.project-item .info {padding: 1em;}
 		.project-item h3 {margin: 0;font-size: 1.2em;}
 		.project-item p {margin-top: 1em;line-height: 1.5;}
+		.member { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px; margin-bottom: 30px; }
+		.member-card { width: 200px; padding: 20px; background-color: #f5f5f5; border-radius: 5px; text-align: center; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); }
+		.member-card h3 { margin-top: 10px; color: #333; }
+		.member-card p { color: #888; margin-bottom: 10px; }
+		.member-card a { text-decoration: none; color: #6495ED; display: block; margin-top: 15px; }
+		.member-card a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
@@ -83,6 +89,12 @@
 		<div class="alert alert-primary" role="alert">
 		  12月9号deqecraft工作室官网“项目”功能开放
 		</div><br>
+		<div class="alert alert-primary" role="alert"><pre>
+		  12月22号
+		  使用了Bootstrap框架中的选项卡（Tab）组件，将多个文件合为一体，大大加快了速度
+		  使用素材中的Bootstrap和jQuery，加快了加载速度
+		  整理了文件素材
+		</div><br></pre>
 		<div class="alert alert-primary" role="alert">
 		  12月26号deqecraft工作室官网“项目”功能Bootstrap的原版卡片退出，更换了另种样式
 		</div><br>
@@ -103,143 +115,80 @@
 
     <div id="cy" class="tab-content" style="text-align:center">
 		<h1 style="color:orange">成员列表</h1>
-			<div class="row">
-				<div class="col-3">
-					<!-- 陈溯 -->
-					<div class="card" style="width: 18rem;">
-				  <div class="card-body">
-					<h5 class="card-title">陈溯</h5>
-					<h6 class="card-subtitle mb-2 text-muted">室长</h6>
-					<p class="card-text">会的语言：python,c++,scratch,javascript,html,css</p>
-					<p class="card-text">联系方式：qq:3445205294</p>
-					<a href="https://deq3000ren7cs.github.io" class="card-link" target="_blank">个人主页</a>
-					<a href="https://code.xueersi.com/space/8582930" class="card-link" target="_blank">C站主页</a>
-				  </div>
-				</div>
-				</div>
-		<!--陈溯结束-->
-				<div class="col-3">
-				<!--斯亦轩-->
-				<div class="card" style="width: 18rem;">
-				  <div class="card-body">
-					<h5 class="card-title">斯亦轩</h5>
-					<h6 class="card-subtitle mb-2 text-muted">scratch部成员</h6>
-					<p class="card-text">会的语言：python，scratch</p>
-					<p class="card-text">联系方式：</p>
-					<a href="#" class="card-link">个人主页：无</a>
-					<a href="https://code.xueersi.com/space/7977794" class="card-link" target="_blank">C站主页</a>
-				  </div>
-				</div>
-				</div>
-		<!--斯亦轩结束-->
-			<div class="col-3">
-				<!--张庭嘉-->
-				<div class="card" style="width: 18rem;">
-				  <div class="card-body">
-					<h5 class="card-title">张庭嘉</h5>
-					<h6 class="card-subtitle mb-2 text-muted">scratch部成员</h6>
-					<p class="card-text">会的语言：python，scratch</p>
-					<p class="card-text">联系方式：</p>
-					<a href="#" class="card-link">个人主页：无</a>
-					<a href="https://code.xueersi.com/space/10461750" class="card-link" target="_blank">C站主页</a>
-				  </div>
-				</div>
-				</div>
-		<!-- 张庭嘉结束-->
-			<div class="col-3">
-				<!--史罗宇-->
-				<div class="card" style="width: 18rem;">
-				  <div class="card-body">
-					<h5 class="card-title">史罗宇</h5>
-					<h6 class="card-subtitle mb-2 text-muted">c++部成员</h6>
-					<p class="card-text">会的语言：c++，scratch</p>
-					<p class="card-text">联系方式：</p>
-					<a href="#" class="card-link">个人主页：无</a>
-					<a href="https://code.xueersi.com/space/8222496" class="card-link" target="_blank">C站主页</a>
-				  </div>
-				</div>
-				</div>
-		<!-- 史罗宇结束-->
-			<div class="col-3">
-				<!--叶凌-->
-				<div class="card" style="width: 18rem;">
-				  <div class="card-body">叶凌</h5>
-					<h6 class="card-subtitle mb-2 text-muted">pthon部成员</h6>
-					<p class="card-text">会的语言：python,scratch</p>
-					<p class="card-text">联系方式：</p>
-					<a href="#" class="card-link">个人主页：无</a>
-					<a href="https://code.xueersi.com/space/9734517" class="card-link" target="_blank">C站主页</a>
-				  </div>
-				</div>
-				</div>
-		<!-- 叶凌结束-->
-			<div class="col-3">
-				<!--陈韵桧-->
-				<div class="card" style="width: 18rem;">
-				  <div class="card-body">陈韵桧</h5>
-					<h6 class="card-subtitle mb-2 text-muted">scratch部成员</h6>
-					<p class="card-text">会的语言：scratch</p>
-					<p class="card-text">联系方式：</p>
-					<a href="#" class="card-link">个人主页：无</a>
-					<a href="https://code.xueersi.com/space/9861328" class="card-link" target="_blank">C站主页</a>
-				  </div>
-				</div>
-				</div>
-		<!-- 陈韵桧结束-->
-			<div class="col-3">
-				<!--林初晖-->
-				<div class="card" style="width: 18rem;">
-				  <div class="card-body">林初晖</h5>
-					<h6 class="card-subtitle mb-2 text-muted">python部成员</h6>
-					<p class="card-text">会的语言：scratch,python</p>
-					<p class="card-text">联系方式：</p>
-					<a href="#" class="card-link">个人主页：无</a>
-					<a href="https://code.xueersi.com/space/50607527" class="card-link" target="_blank">C站主页</a>
-				  </div>
-				</div>
-				</div>
-		<!-- 林初晖结束-->
-			<div class="col-3">
-				<!--郑瑾萱-->
-				<div class="card" style="width: 18rem;">
-				  <div class="card-body">郑瑾萱</h5>
-					<h6 class="card-subtitle mb-2 text-muted">python部成员</h6>
-					<p class="card-text">会的语言：scratch,python</p>
-					<p class="card-text">联系方式：</p>
-					<a href="#" class="card-link">个人主页：无</a>
-					<a href="https://code.xueersi.com/space/16174980" class="card-link" target="_blank">C站主页</a>
-				  </div>
-				</div>
-				</div>
-		<!-- 郑瑾萱结束-->
-			<div class="col-3">
-				<!--吴政洋-->
-				<div class="card" style="width: 18rem;">
-				  <div class="card-body">吴政洋</h5>
-					<h6 class="card-subtitle mb-2 text-muted">python部成员</h6>
-					<p class="card-text">会的语言：scratch,python</p>
-					<p class="card-text">联系方式：</p>
-					<a href="#" class="card-link">个人主页：无</a>
-					<a href="https://code.xueersi.com/space/3137701"  target="_blank" class="card-link">C站主页</a>
-				  </div>
-				</div>
-				</div>
-		<!-- 吴政洋结束-->
-			<div class="col-3">
-				<!--刘陈正-->
-				<div class="card" style="width: 18rem;">
-				  <div class="card-body">刘陈正</h5>
-					<h6 class="card-subtitle mb-2 text-muted">python部成员</h6>
-					<p class="card-text">会的语言：scratch,python</p>
-					<p class="card-text">联系方式：</p>
-					<a href="#" class="card-link">个人主页：无</a>
-					<a href="https://code.xueersi.com/space/71377208"  target="_blank" class="card-link">C站主页</a>
-				  </div>
-				</div>
-				</div>
+		  <div class="member">
+				<!-- 陈溯 -->
+		    <div class="member-card">
+				<h5>陈溯</h5>
+				<p>室长</p>
+				<a href="https://deq3000ren7cs.github.io" target="_blank">个人主页</a>
+				<a href="https://code.xueersi.com/space/8582930" target="_blank">C站主页</a>
 			</div>
+		<!--陈溯结束-->
+				<!--斯亦轩-->
+		    <div class="member-card">
+				<h5>斯亦轩</h5>
+				<p>scratch部成员</p>
+				<a href="https://code.xueersi.com/space/7977794" target="_blank">C站主页</a>
+			</div>
+		<!--斯亦轩结束-->
+				<!--张庭嘉-->
+		    <div class="member-card">
+				<h5 class="card-title">张庭嘉</h5>
+				<p>scratch部成员</p>
+				<a href="https://code.xueersi.com/space/10461750" target="_blank">C站主页</a>
+			</div>
+		<!-- 张庭嘉结束-->
+				<!--史罗宇-->
+		    <div class="member-card">
+				<h5>史罗宇</h5>
+				<p>c++部成员</p>
+				<a href="https://code.xueersi.com/space/8222496" target="_blank">C站主页</a>
+			</div>
+		<!-- 史罗宇结束-->
+				<!--叶凌-->
+			<div class="member-card">
+				<h5>叶凌</h5>
+				<p>pthon部成员</p>
+				<a href="https://code.xueersi.com/space/9734517" target="_blank">C站主页</a>
+			</div>
+		<!-- 叶凌结束-->
+				<!--陈韵桧-->
+			<div class="member-card">
+				<h5>陈韵桧</h5>
+				<p>scratch部成员</p>
+				<a href="https://code.xueersi.com/space/9861328" target="_blank">C站主页</a>
+			</div>
+		<!-- 陈韵桧结束-->
+				<!--林初晖-->
+		    <div class="member-card">
+				<h5>林初晖</h5>
+				<p>python部成员</p>
+				<a href="https://code.xueersi.com/space/50607527" target="_blank">C站主页</a>
+			</div>
+		<!-- 林初晖结束-->
+				<!--郑瑾萱-->
+		    <div class="member-card">
+				<h5>郑瑾萱</h5>
+				<p>python部成员</p>
+				<a href="https://code.xueersi.com/space/16174980" target="_blank">C站主页</a>
+			</div>
+		<!-- 郑瑾萱结束-->
+				<!--吴政洋-->
+			<div class="member-card">
+				<h5>吴政洋</h5>
+				<p>python部成员</p>
+				<a href="https://code.xueersi.com/space/3137701"  target="_blank">C站主页</a>
+			</div>
+		<!-- 吴政洋结束-->
+				<!--刘陈正-->
+			<div class="member-card">
+				<h5>刘陈正</h5>
+				<p>python部成员<p>
+				<a href="https://code.xueersi.com/space/71377208"  target="_blank">C站主页</a>
+			</div>
+		<!--刘陈正结束-->
+		</div>
 	</div>
-
     <div id="code" class="tab-content">
 		<div class="alert alert-danger" role="alert">
 			如果你发现我们工作室成员的作品没有上墙 <a href="#" class="alert-link">那么请你思考</a>他/她的作品是否是原创？封面是不是我们logo？
@@ -264,7 +213,6 @@
 					  <p>这是一个可以根据密码位数生成密码的工具，该工具原理简单，实用性强！</p>
 					</div>
 				</div>
-
 				<div class="project-item">
 				  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49457919&version=offline&form=python&langType=python" target="_blank">
 					<img src="/static/deqecraft.png" alt="Project 2">
@@ -274,8 +222,6 @@
 					  <p>这是一个仿真计算器！</p>
 					</div>
 				</div>
-
-
 				<div class="project-item">
 				  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49494421&version=webpy&form=webpy&langType=webpy" target="_blank">
 					<img src="/static/deqecraft.png" alt="Project 2">
@@ -285,8 +231,6 @@
 					  <p>这是一个海龟写字模版！适合新手。</p>
 					</div>
 				</div>
-
-
 				<div class="project-item">
 				  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49449161&version=webpy&form=webpy&langType=webp" target="_blank">
 					<img src="/static/deqecraft.png" alt="Project 2">
@@ -296,8 +240,6 @@
 					  <p>这是一个卡片对战游戏！</p>
 					</div>
 				</div>
-
-
 				<div class="project-item">
 				  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49758773&version=offline&form=python&langType=python" target="_blank">
 					<img src="/static/deqecraft.png" alt="Project 2">
@@ -307,8 +249,6 @@
 					  <p>这是一个基于<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49494330&version=python&form=python&langType=python" target="_blank">源码破解器4.0</a>的改进版！</p>
 					</div>
 				</div>
-
-
 				<div class="project-item">
 				  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49758545&version=offline&form=python&langType=python" target="_blank">
 					<img src="/static/deqecraft.png" alt="Project 2">
@@ -318,8 +258,6 @@
 					  <p>这是一个基于<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49494330&version=python&form=python&langType=python" target="_blank">源码破解器4.0</a>的改进版！</p>
 					</div>
 				</div>
-
-
 				<div class="project-item">
 				  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49768603&version=offline&form=python&langType=python" target="_blank">
 					<img src="/static/deqecraft.png" alt="Project 2">
@@ -330,8 +268,6 @@
 					  <p class="card-text"><a href="https://livefile.xesimg.com/programme/python_assets/5336385511d3db0d78706c4b61f0ec55.exe" target="_blank">下载</a></p>
 					</div>
 				</div>
-
-
 				<div class="project-item">
 				  <a href="https://code.xueersi.com/home/project/detail?lang=scratch&pid=23648601&version=3.0&langType=scratch" target="_blank">
 					<img src="/static/deqecraft.png" alt="Project 2">
@@ -341,8 +277,6 @@
 					  <p>这是一个是一款像素画面的冒险闯关手机游戏。</p>
 					</div>
 				</div>
-
-
 				<div class="project-item">
 				  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49826972&version=offline&form=python&langType=python" target="_blank">
 					<img src="/static/deqecraft.png" alt="Project 2">
@@ -352,8 +286,6 @@
 					  <p>改进版，<a href="https://livefile.xesimg.com/programme/python_assets/9040646e5a28965b80998ab42a860d96.html" target="_blank">申请授权资料</a></p>
 					</div>
 				</div>
-
-
 				<div class="project-item">
 				  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49826560&version=webpy&form=webpy&langType=webpy" target="_blank">
 					<img src="/static/deqecraft.png" alt="Project 2">
@@ -363,8 +295,6 @@
 					  <p>教你如何手动蓝屏</p>
 					</div>
 				</div>
-
-
 				<div class="project-item">
 					<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=50034687&version=python&form=python&langType=python" target="_blank">
 					<img src="/static/deqecraft.png" alt="Project 2">
@@ -375,7 +305,6 @@
 					</div>
 				</div>
 			</div>
-
 	</div>
     <script>
         function switchTab(event, tabId) {
