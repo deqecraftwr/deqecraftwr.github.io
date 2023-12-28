@@ -14,7 +14,11 @@
         .active {display: block;}
 		.o{color:orange;}
 		* {box-sizing: border-box;}
-		body {font-family: Arial, sans-serif;background-color: #f4f4f4;margin: 0;padding: 0;text-align:center;}
+		.container { max-width: 800px; margin: 0 auto; padding: 20px; background-color: #fff; border-radius: 5px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); }
+		h1 { text-align: center; color: #333; margin-bottom: 20px; }
+		p { text-align: center; line-height: 1.5; margin-bottom: 20px; }
+		.justify{text-align:justify;}
+		body {font-family: Arial,sans-serif;background-color: #f4f4f4;margin: 0;padding: 0;text-align:center;}
 		.project-list {display: flex;flex-wrap: wrap;justify-content: center;}
 		.project-item {width: 30%;margin: 1em;background-color: #fff;border-radius: 0.5em;overflow: hidden;box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);transition: all 0.3s ease;}
 		.project-item:hover {transform: translateY(-0.2em);}
@@ -41,15 +45,18 @@
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarNav">
 	    <ul class="navbar-nav">
-	      <li class="nav-item">
+<!-- 	      <li class="nav-item">
 	        <a class="nav-link" href="#" onclick="switchTab(event, 'we')">关于我们</a>
-	      </li>
+	      </li> -->
 	      <li class="nav-item">
 	        <a class="nav-link" href="#" onclick="switchTab(event, 'cy')">成员</a>
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href="#" onclick="switchTab(event, 'code')">项目</a>
 	      </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#" onclick="switchTab(event, 'we2')">关于我们</a>
+		  </li>
 	    </ul>
 	  </div>
 	</nav>
@@ -59,49 +66,9 @@
 		<a href="https://czoffice.top" class="r" style="color:blue;font-size:30px" target="_blank">CZ官网</a>
 		<h2 class="r">CZ官网还在测试中，可能有部分功能不完善</h2>
 		<img src="/static/deqecraft.png" style="text-align:center;">
-		<br><br><br><br><br><br><br><br>
-		<!-- 警告框 -->
-		<div class="alert alert-success" role="alert">
-		  <h4 class="alert-heading">公告！</h4>
-		  <p>deqecraft工作室公告</p>
-		  <hr>
-		  <p class="mb-0">规定&事件&改革</p>
-		</div>
-		<br><br><br><br>
-		<div class="alert alert-primary" role="alert">
-		  10月5号deqecraft工作室成立
-		</div><br>
-		<div class="alert alert-primary" role="alert">
-		  10月7号deqecraft官网初步完善
-		</div><br>
-		<div class="alert alert-primary" role="alert">
-		  10月15号deqecraft工作室建qq群
-		</div><br>
-		<div class="alert alert-primary" role="alert">
-		  10月18号deqecraft工作室建泡泡群
-		</div><br>
-		<div class="alert alert-primary" role="alert">
-		  11月11号deqecraft工作室转CZ工作室旗下
-		</div><br>
-		<div class="alert alert-primary" role="alert">
-		  11月14号deqecraft工作室换新logo
-		</div><br>
-		<div class="alert alert-primary" role="alert">
-		  12月9号deqecraft工作室官网“项目”功能开放
-		</div><br>
-		<div class="alert alert-primary" role="alert"><pre>
-		  12月22号
-		  使用了Bootstrap框架中的选项卡（Tab）组件，将多个文件合为一体，大大加快了速度
-		  使用素材中的Bootstrap和jQuery，加快了加载速度
-		  整理了文件素材
-		</div><br></pre>
-		<div class="alert alert-primary" role="alert">
-		  12月26号deqecraft工作室官网“项目”功能Bootstrap的原版卡片退出，更换了另种样式
-		</div><br>
-		<h6 style="color:orange">……未待完善……</h6>
     </div>
 
-    <div id="we" class="tab-content" style="background-color:slategrey;text-align:center;">
+<!--    <div id="we" class="tab-content" style="background-color:slategrey;text-align:center;">
 		<h1 class="o">关于我们</h1><br/>
 		<h2 class="o">我们是来自学而思编程社区的小团体</h1>
 		<h1 style="color:coral;font-size:15px;text-decoration: line-through;">人数不多也就俩……</h1>
@@ -111,9 +78,9 @@
 		<h2 class="o">希望看到这里的你能…………</h2>
 		<h2 class="o">能……考虑加入我们？</h2>
 		<a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=nfzoTBYXpJnjyNhuxJUKMSiMQZx1jAQN&authKey=w80WHCqOuiDnxjjuAv3jnY8XUzKrWTXvwAzTe2QVU13RQEPW560hj5yQ%2F4nhKqsk&noverify=0&group_code=713972363" style="font-size:30px;" class="o" target="_blank">加入我们</a>
-    </div>
+    </div -->
 
-    <div id="cy" class="tab-content" style="text-align:center">
+    <div id="cy" class="tab-content">
 		<h1 style="color:orange">成员列表</h1>
 		  <div class="member">
 				<!-- 陈溯 -->
@@ -306,6 +273,28 @@
 				</div>
 			</div>
 	</div>
+	<div id="we2" class="tab-content">
+	  <div class="container">
+		<h1>关于deqecraft工作室</h1>
+		<p>deqecraft工作室成立于2023年10月5号，致力于为C站提供更好的作品与技术</p>
+		<p>我们官网不断进行改进和更新：</p>
+		<ul>
+			<h3>2023年</h3>
+			<li class="justify">10月7号deqecraft官网初步完善</li>
+			<li class="justify">10月15号deqecraft工作室建qq群</li>
+			<li class="justify">10月18号deqecraft工作室建泡泡群</li>
+			<li class="justify">11月11号deqecraft工作室转CZ工作室旗下</li>
+			<li class="justify">11月14号deqecraft工作室换新logo</li>
+			<li class="justify">12月9号deqecraft工作室官网“项目”功能开放</li>
+			<li class="justify">12月9号deqecraft工作室官网“项目”功能开放</li>
+			<li class="justify">12月22号使用了Bootstrap框架中的选项卡（Tab）组件，将多个文件合为一体，大大加快了速度使用素材中的Bootstrap和jQuery，加快了加载速度整理了文件素材</li>
+			<li class="justify">12月26号deqecraft工作室官网“项目”功能Bootstrap的原版卡片退出，更换了另种样式</li>
+		</ul>
+		<p>我们坚持以用户为中心，不断努力提升用户体验，希望能为广大用户带来更多快乐和乐趣。</p>
+		<p>然而我们工作室采用高度自由，无严格作品要求的制度，可能会出现令您不适的内容，请联系我<a href="#">3445205294@qq.com</a>我们会加以整改</p>
+		<p>感谢您对deqecraft工作室的支持和关注！</p>
+	  </div>
+	<div>
     <script>
         function switchTab(event, tabId) {
             // 阻止默认链接行为
