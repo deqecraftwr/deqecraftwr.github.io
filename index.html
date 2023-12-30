@@ -4,120 +4,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>deqecraft官网</title>
-	<script src="/jQuery/jquery.min.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css" crossorigin="anonymous">
+    <title>元旦快乐-deqecraft官网</title>
+	<link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/static/css/index_all.css">
 	<link rel="shortcut icon" href="/static/deqecraft.png">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#" onclick="switchTab(event, 'home')">
-            <img src="/static/deqecraft.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            deqecraft
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="switchTab(event, 'cy')">成员</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="switchTab(event, 'code')">项目</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="switchTab(event, 'we2')">关于我们</a>
-                </li>
-            </ul>
+    <script src="/static/js/index_all.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#" onclick="switchTab(event, 'home')">
+                <img src="/static/deqecraft.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                deqecraft
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="switchTab(event, 'cy')">成员</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="switchTab(event, 'code')">项目</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="switchTab(event, 'we2')">关于我们</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <div id="home" class="tab-content active">
-		<h2 class="r">deqecraft官网（CZ工作室旗下）</h2>
-		<a href="https://czoffice.top" class="r" style="color:blue;font-size:30px" target="_blank">CZ官网</a>
-		<h2 class="r">CZ官网还在测试中，可能有部分功能不完善</h2>
-		<img src="/static/deqecraft.png" style="text-align:center;">
+		<div class="container">
+			<h2 class="text-center py-3">祝您元旦快乐！</h2>
+			<p class="lead text-center">愿新的一年带给您无限的喜悦和成功。</p>
+			<img src="/static/deqecraft.png" class="img-fluid d-block mx-auto" alt="deqecraft">
+		</div>
     </div>
 
     <div id="cy" class="tab-content">
-		<h1 style="color:orange">成员列表</h1>
-		  <div class="member">
-				<!-- 陈溯 -->
-		    <div class="member-card">
-				<h5>陈溯</h5>
-				<p>室长</p>
-				<a href="https://deq3000ren7cs.github.io" target="_blank">个人主页</a>
-				<a href="https://code.xueersi.com/space/8582930" target="_blank">C站主页</a>
-			</div>
-		<!--陈溯结束-->
-				<!--斯亦轩-->
-		    <div class="member-card">
-				<h5>斯亦轩</h5>
-				<p>scratch部成员</p>
-				<a href="https://code.xueersi.com/space/7977794" target="_blank">C站主页</a>
-			</div>
-		<!--斯亦轩结束-->
-				<!--张庭嘉-->
-		    <div class="member-card">
-				<h5 class="card-title">张庭嘉</h5>
-				<p>scratch部成员</p>
-				<a href="https://code.xueersi.com/space/10461750" target="_blank">C站主页</a>
-			</div>
-		<!-- 张庭嘉结束-->
-				<!--史罗宇-->
-		    <div class="member-card">
-				<h5>史罗宇</h5>
-				<p>c++部成员</p>
-				<a href="https://code.xueersi.com/space/8222496" target="_blank">C站主页</a>
-			</div>
-		<!-- 史罗宇结束-->
-				<!--叶凌-->
-			<div class="member-card">
-				<h5>叶凌</h5>
-				<p>pthon部成员</p>
-				<a href="https://code.xueersi.com/space/9734517" target="_blank">C站主页</a>
-			</div>
-		<!-- 叶凌结束-->
-				<!--陈韵桧-->
-			<div class="member-card">
-				<h5>陈韵桧</h5>
-				<p>scratch部成员</p>
-				<a href="https://code.xueersi.com/space/9861328" target="_blank">C站主页</a>
-			</div>
-		<!-- 陈韵桧结束-->
-				<!--林初晖-->
-		    <div class="member-card">
-				<h5>林初晖</h5>
-				<p>python部成员</p>
-				<a href="https://code.xueersi.com/space/50607527" target="_blank">C站主页</a>
-			</div>
-		<!-- 林初晖结束-->
-				<!--郑瑾萱-->
-		    <div class="member-card">
-				<h5>郑瑾萱</h5>
-				<p>python部成员</p>
-				<a href="https://code.xueersi.com/space/16174980" target="_blank">C站主页</a>
-			</div>
-		<!-- 郑瑾萱结束-->
-				<!--吴政洋-->
-			<div class="member-card">
-				<h5>吴政洋</h5>
-				<p>python部成员</p>
-				<a href="https://code.xueersi.com/space/3137701"  target="_blank">C站主页</a>
-			</div>
-		<!-- 吴政洋结束-->
-				<!--刘陈正-->
-			<div class="member-card">
-				<h5>刘陈正</h5>
-				<p>python部成员<p>
-				<a href="https://code.xueersi.com/space/71377208"  target="_blank">C站主页</a>
-			</div>
-		<!--刘陈正结束-->
+		<div class="container">
+            <h1 style="color:orange">成员列表</h1>
+    		  <div class="member">
+    				<!-- 陈溯 -->
+    		    <div class="member-card">
+    				<h5>陈溯</h5>
+    				<p>室长</p>
+    				<a href="https://deq3000ren7cs.github.io" target="_blank">个人主页</a>
+    				<a href="https://code.xueersi.com/space/8582930" target="_blank">C站主页</a>
+    			</div>
+    		<!--陈溯结束-->
+    				<!--斯亦轩-->
+    		    <div class="member-card">
+    				<h5>斯亦轩</h5>
+    				<p>scratch部成员</p>
+    				<a href="https://code.xueersi.com/space/7977794" target="_blank">C站主页</a>
+    			</div>
+    		<!--斯亦轩结束-->
+    				<!--张庭嘉-->
+    		    <div class="member-card">
+    				<h5 class="card-title">张庭嘉</h5>
+    				<p>scratch部成员</p>
+    				<a href="https://code.xueersi.com/space/10461750" target="_blank">C站主页</a>
+    			</div>
+    		<!-- 张庭嘉结束-->
+    				<!--史罗宇-->
+    		    <div class="member-card">
+    				<h5>史罗宇</h5>
+    				<p>c++部成员</p>
+    				<a href="https://code.xueersi.com/space/8222496" target="_blank">C站主页</a>
+    			</div>
+    		<!-- 史罗宇结束-->
+    				<!--叶凌-->
+    			<div class="member-card">
+    				<h5>叶凌</h5>
+    				<p>pthon部成员</p>
+    				<a href="https://code.xueersi.com/space/9734517" target="_blank">C站主页</a>
+    			</div>
+    		<!-- 叶凌结束-->
+    				<!--陈韵桧-->
+    			<div class="member-card">
+    				<h5>陈韵桧</h5>
+    				<p>scratch部成员</p>
+    				<a href="https://code.xueersi.com/space/9861328" target="_blank">C站主页</a>
+    			</div>
+    		<!-- 陈韵桧结束-->
+    				<!--林初晖-->
+    		    <div class="member-card">
+    				<h5>林初晖</h5>
+    				<p>python部成员</p>
+    				<a href="https://code.xueersi.com/space/50607527" target="_blank">C站主页</a>
+    			</div>
+    		<!-- 林初晖结束-->
+    				<!--郑瑾萱-->
+    		    <div class="member-card">
+    				<h5>郑瑾萱</h5>
+    				<p>python部成员</p>
+    				<a href="https://code.xueersi.com/space/16174980" target="_blank">C站主页</a>
+    			</div>
+    		<!-- 郑瑾萱结束-->
+    				<!--吴政洋-->
+    			<div class="member-card">
+    				<h5>吴政洋</h5>
+    				<p>python部成员</p>
+    				<a href="https://code.xueersi.com/space/3137701"  target="_blank">C站主页</a>
+    			</div>
+    		<!-- 吴政洋结束-->
+    				<!--刘陈正-->
+    			<div class="member-card">
+    				<h5>刘陈正</h5>
+    				<p>python部成员<p>
+    				<a href="https://code.xueersi.com/space/71377208"  target="_blank">C站主页</a>
+    			</div>
+    		<!--刘陈正结束-->
+    		</div>
 		</div>
 	</div>
     <div id="code" class="tab-content">
+		<div class="container">
+			<h2 class="text-center py-3">项目列表</h2>
 		<div class="alert alert-danger" role="alert">
 			如果你发现我们工作室成员的作品没有上墙 <a href="#" class="alert-link">那么请你思考</a>他/她的作品是否是原创？封面是不是我们logo？
 			<p>如果你确定符合要求请联系<a href="#" class="alert-link">3445205294@qq.com</a>并发链接给我</p>
@@ -233,10 +240,12 @@
 					</div>
 				</div>
 			</div>
+		</div>
 	</div>
 	<div id="we2" class="tab-content">
 	  <div class="container">
-		<h1>关于deqecraft工作室</h1>
+		<h1 class="text-center py-3">关于deqecraft工作室</h1>
+		<p style="color:red">deqecraft工作室祝您元旦快乐！</p>
 		<p>deqecraft工作室成立于2023年10月5号，致力于为C站提供更好的作品与技术</p>
 		<p>我们官网不断进行改进和更新：</p>
 		<ul>
@@ -257,28 +266,24 @@
 		<p>然而我们工作室采用高度自由，无严格作品要求的制度，可能会出现令您不适的内容，请联系我<a href="#">3445205294@qq.com</a>我们会加以整改</p>
 		<p>感谢您对deqecraft工作室的支持和关注！</p>
 	  </div>
+	  </div>
 	</div>
-	<div>
-    <footer>
+	<footer class="text-center py-4">
         <p>&copy; 2023 版权所有deqecraft工作室<br>deqecraft工作室</p>
         <a href="#">Back to Top</a>
     </footer>
     <script>
         function switchTab(event, tabId) {
-            // 阻止默认链接行为
             event.preventDefault();
-
-            // 隐藏所有的选项卡内容
             var tabContents = document.getElementsByClassName("tab-content");
             for (var i = 0; i < tabContents.length; i++) {
                 tabContents[i].classList.remove("active");
             }
-
-            // 显示当前选中的选项卡内容
             document.getElementById(tabId).classList.add("active");
         }
     </script>
-	<script src="/Bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="/jQuery/jquery.min.js"></script>
+    <link rel="stylesheet" href="/Bootstrap/js/bootstrap.min.js">
 </body>
 
 </html>
