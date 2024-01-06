@@ -8,12 +8,29 @@
 	<link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/static/css/index_all.css">
 	<link rel="shortcut icon" href="/static/deqecraft.png">
+	<script src="/static/js/index_zd.js"></script>
+    <style>
+    /*    #home,#member,#AboutUs{*/
+            /*overflow: hidden;*/
+            /*margin: 0;*/
+            /*z-index:9990;*/
+    /*        position: relative;*/
+    /*    }*/
+    /*    canvas {*/
+    /*        left: 0;*/
+    /*        position: fixed;*/
+    /*        top: 0;*/
+    /*        touch-action: none;*/
+    /*    }*/
+    </style>
+    <!--<canvas></canvas>-->
+    <!--<script src="/static/js/index_bg.js"></script>-->
 </head>
 <body>
-    <script src="/static/js/index_all.js"></script>
+    <!--<script src="/static/js/index_bg.js"></script>-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#" onclick="switchTab(event, 'home')">
+            <a class="navbar-brand" href="#home" onclick="switchTab(event, 'home')">
                 <img src="/static/deqecraft.png" width="30" height="30" class="d-inline-block align-top" alt="">
                 deqecraft
             </a>
@@ -24,13 +41,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="switchTab(event, 'cy')">成员</a>
+                        <a class="nav-link" href="#member" onclick="switchTab(event, 'member')">成员</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="switchTab(event, 'code')">项目</a>
+                        <a class="nav-link" href="#project" onclick="switchTab(event, 'project')">项目</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="switchTab(event, 'we2')">关于我们</a>
+                        <a class="nav-link" href="#AboutUs" onclick="switchTab(event, 'AboutUs')">关于我们</a>
                     </li>
                 </ul>
             </div>
@@ -38,13 +55,18 @@
     </nav>
     <div id="home" class="tab-content active">
 		<div class="container">
+		    <font color="lightblue">
+            <marquee>欢迎来到deqecraft工作室（<a href="https://czoffice.top/" target="_blank">CZ工作室</a>旗下）官网</marquee>
+            </font>
 			<h2 class="text-center py-3">祝您元旦快乐！</h2>
 			<p class="lead text-center">愿新的一年带给您无限的喜悦和成功。</p>
-			<img src="/static/deqecraft.png" class="img-fluid d-block mx-auto" alt="deqecraft">
+			<a title="deqecraft工作室" href="#home">
+			    <img src="/static/deqecraft.png" class="img-fluid d-block mx-auto" alt="deqecraft">
+		    </a>
 		</div>
     </div>
 
-    <div id="cy" class="tab-content">
+    <div id="member" class="tab-content">
 		<div class="container">
             <h1 style="color:orange">成员列表</h1>
     		  <div class="member">
@@ -59,86 +81,94 @@
     				<!--斯亦轩-->
     		    <div class="member-card">
     				<h5>斯亦轩</h5>
-    				<p>scratch部成员</p>
+    				<p>成员</p>
     				<a href="https://code.xueersi.com/space/7977794" target="_blank">C站主页</a>
     			</div>
     		<!--斯亦轩结束-->
     				<!--张庭嘉-->
     		    <div class="member-card">
     				<h5 class="card-title">张庭嘉</h5>
-    				<p>scratch部成员</p>
+    				<p>成员</p>
     				<a href="https://code.xueersi.com/space/10461750" target="_blank">C站主页</a>
     			</div>
     		<!-- 张庭嘉结束-->
     				<!--史罗宇-->
     		    <div class="member-card">
     				<h5>史罗宇</h5>
-    				<p>c++部成员</p>
+    				<p>成员</p>
     				<a href="https://code.xueersi.com/space/8222496" target="_blank">C站主页</a>
     			</div>
     		<!-- 史罗宇结束-->
     				<!--叶凌-->
     			<div class="member-card">
     				<h5>叶凌</h5>
-    				<p>pthon部成员</p>
+    				<p>成员</p>
     				<a href="https://code.xueersi.com/space/9734517" target="_blank">C站主页</a>
     			</div>
     		<!-- 叶凌结束-->
     				<!--陈韵桧-->
     			<div class="member-card">
     				<h5>陈韵桧</h5>
-    				<p>scratch部成员</p>
+    				<p>成员</p>
     				<a href="https://code.xueersi.com/space/9861328" target="_blank">C站主页</a>
     			</div>
     		<!-- 陈韵桧结束-->
     				<!--林初晖-->
     		    <div class="member-card">
     				<h5>林初晖</h5>
-    				<p>python部成员</p>
+    				<p>成员</p>
     				<a href="https://code.xueersi.com/space/50607527" target="_blank">C站主页</a>
     			</div>
     		<!-- 林初晖结束-->
     				<!--郑瑾萱-->
     		    <div class="member-card">
     				<h5>郑瑾萱</h5>
-    				<p>python部成员</p>
+    				<p>成员</p>
     				<a href="https://code.xueersi.com/space/16174980" target="_blank">C站主页</a>
     			</div>
     		<!-- 郑瑾萱结束-->
     				<!--吴政洋-->
     			<div class="member-card">
     				<h5>吴政洋</h5>
-    				<p>python部成员</p>
+    				<p>成员</p>
     				<a href="https://code.xueersi.com/space/3137701"  target="_blank">C站主页</a>
     			</div>
     		<!-- 吴政洋结束-->
     				<!--刘陈正-->
     			<div class="member-card">
     				<h5>刘陈正</h5>
-    				<p>python部成员<p>
+    				<p>成员<p>
     				<a href="https://code.xueersi.com/space/71377208"  target="_blank">C站主页</a>
+    			</div>
+    		<!--刘陈正结束-->
+    				<!--邓训钊-->
+    			<div class="member-card">
+    				<h5>邓训钊</h5>
+    				<p>成员<p>
+    				<a href="https://code.xueersi.com/space/43380828?to=homepages" target="_blank">C站主页</a>
     			</div>
     		<!--刘陈正结束-->
     		</div>
 		</div>
 	</div>
-    <div id="code" class="tab-content">
+    <div id="project" class="tab-content">
 		<div class="container">
-			<h2 class="text-center py-3">项目列表</h2>
+			<h2 class="text-center py-3">作品列表</h2>
 		<div class="alert alert-danger" role="alert">
-			如果你发现我们工作室成员的作品没有上墙 <a href="#" class="alert-link">那么请你思考</a>他/她的作品是否是原创？封面是不是我们logo？
-			<p>如果你确定符合要求请联系<a href="#" class="alert-link">3445205294@qq.com</a>并发链接给我</p>
+			如果你发现我们工作室成员的作品很优秀但是没有上墙，他/她的作品是否是原创？
+			<p>如果你确定那么请联系<a href="#" class="alert-link">3445205294@qq.com</a>并发链接给我</p>
 		</div>
+			  <h3 class="text-center py-3">工作室代表作：</h3>
 			  <div class="project-list">
-				<div class="project-item">
-				  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49494330&version=python&form=python&langType=python" target="_blank">
-					<img src="/static/deqecraft.png" alt="Project 2">
-					<div class="info">
-					  <h3>源码破解器4.0</h3>
-			      </a>
-					  <p>这是一个可以任意破解C站作品的工具，没有UI将就一下吧！</p>
-					</div>
-				</div>
+				<!--<div class="project-item">-->
+				<!--  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49494330&version=python&form=python&langType=python" target="_blank">-->
+				<!--	<img src="/static/deqecraft.png" alt="Project 2">-->
+				<!--	<div class="info">-->
+				<!--	  <h3>源码破解器4.0</h3>-->
+			 <!--     </a>-->
+				<!--	  <p>这是一个可以任意破解C站作品的工具，没有UI将就一下吧！</p>-->
+				<!--	</div>-->
+				<!--</div>-->
 				<div class="project-item">
 				  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49310043&version=webpy&form=webpy&langType=webpy" target="_blank">
 					<img src="/static/deqecraft.png" alt="Project 2">
@@ -157,15 +187,15 @@
 					  <p>这是一个仿真计算器！</p>
 					</div>
 				</div>
-				<div class="project-item">
-				  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49494421&version=webpy&form=webpy&langType=webpy" target="_blank">
-					<img src="/static/deqecraft.png" alt="Project 2">
-					<div class="info">
-					  <h3>海龟写字模版</h3>
-				  </a>
-					  <p>这是一个海龟写字模版！适合新手。</p>
-					</div>
-				</div>
+				<!--<div class="project-item">-->
+				<!--  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49494421&version=webpy&form=webpy&langType=webpy" target="_blank">-->
+				<!--	<img src="/static/deqecraft.png" alt="Project 2">-->
+				<!--	<div class="info">-->
+				<!--	  <h3>海龟写字模版</h3>-->
+				<!--  </a>-->
+				<!--	  <p>这是一个海龟写字模版！适合新手。</p>-->
+				<!--	</div>-->
+				<!--</div>-->
 				<div class="project-item">
 				  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49449161&version=webpy&form=webpy&langType=webp" target="_blank">
 					<img src="/static/deqecraft.png" alt="Project 2">
@@ -204,45 +234,46 @@
 					</div>
 				</div>
 				<div class="project-item">
-				  <a href="https://code.xueersi.com/home/project/detail?lang=scratch&pid=23648601&version=3.0&langType=scratch" target="_blank">
+				  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=50281375&version=offline&form=compiler&langType=python" target="_blank">
 					<img src="/static/deqecraft.png" alt="Project 2">
 					<div class="info">
-					  <h3>_传说之下 全然不信（正版）</h3>
+					  <h3>随机网名生成器（有ui）</h3>
 				  </a>
-					  <p>这是一个是一款像素画面的冒险闯关手机游戏。</p>
+					  <p>这是一个生成网名的程序</p>
+					  <p class="card-text"><a href="https://livefile.xesimg.com/programme/python_assets/5336385511d3db0d78706c4b61f0ec55.exe" target="_blank">下载</a></p>
 					</div>
 				</div>
-				<div class="project-item">
-				  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49826972&version=offline&form=python&langType=python" target="_blank">
-					<img src="/static/deqecraft.png" alt="Project 2">
-					<div class="info">
-					  <h3>#已授权#创造一颗属于你的星球！</h3>
-				  </a>
-					  <p>改进版，<a href="https://livefile.xesimg.com/programme/python_assets/9040646e5a28965b80998ab42a860d96.html" target="_blank">申请授权资料</a></p>
-					</div>
-				</div>
-				<div class="project-item">
-				  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49826560&version=webpy&form=webpy&langType=webpy" target="_blank">
-					<img src="/static/deqecraft.png" alt="Project 2">
-					<div class="info">
-					  <h3>cmd蓝屏教程</h3>
-				   </a>
-					  <p>教你如何手动蓝屏</p>
-					</div>
-				</div>
-				<div class="project-item">
-					<a href="https://code.xueersi.com/home/project/detail?lang=code&pid=50034687&version=python&form=python&langType=python" target="_blank">
-					<img src="/static/deqecraft.png" alt="Project 2">
-					<div class="info">
-						<h3>破违禁词程序</h3>
-					</a>
-						<p>xes有限制违禁词不能发送的机制，该程序利用一个字符把违禁词隔开便可</p>
-					</div>
-				</div>
+				<!--<div class="project-item">-->
+				<!--  <a href="https://code.xueersi.com/home/project/detail?lang=scratch&pid=23648601&version=3.0&langType=scratch" target="_blank">-->
+				<!--	<img src="/static/deqecraft.png" alt="Project 2">-->
+				<!--	<div class="info">-->
+				<!--	  <h3>_传说之下 全然不信（正版）</h3>-->
+				<!--  </a>-->
+				<!--	  <p>这是一个是一款像素画面的冒险闯关手机游戏。</p>-->
+				<!--	</div>-->
+				<!--</div>-->
+				<!--<div class="project-item">-->
+				<!--  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49826972&version=offline&form=python&langType=python" target="_blank">-->
+				<!--	<img src="/static/deqecraft.png" alt="Project 2">-->
+				<!--	<div class="info">-->
+				<!--	  <h3>#已授权#创造一颗属于你的星球！</h3>-->
+				<!--  </a>-->
+				<!--	  <p>改进版，<a href="https://livefile.xesimg.com/programme/python_assets/9040646e5a28965b80998ab42a860d96.html" target="_blank">申请授权资料</a></p>-->
+				<!--	</div>-->
+				<!--</div>-->
+				<!--<div class="project-item">-->
+				<!--  <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=49826560&version=webpy&form=webpy&langType=webpy" target="_blank">-->
+				<!--	<img src="/static/deqecraft.png" alt="Project 2">-->
+				<!--	<div class="info">-->
+				<!--	  <h3>cmd蓝屏教程</h3>-->
+				<!--   </a>-->
+				<!--	  <p>教你如何手动蓝屏</p>-->
+				<!--	</div>-->
+				<!--</div>-->
 			</div>
 		</div>
 	</div>
-	<div id="we2" class="tab-content">
+	<div id="AboutUs" class="tab-content">
 	  <div class="container">
 		<h1 class="text-center py-3">关于deqecraft工作室</h1>
 		<p style="color:red">deqecraft工作室祝您元旦快乐！</p>
@@ -261,6 +292,10 @@
 			<li class="justify">12月26号deqecraft工作室官网“项目”功能Bootstrap的原版卡片退出，更换了另种样式</li>
 			<li class="justify">12月26号deqecraft工作室官网“关于我们”功能更新，删除了原有样式增加了新的布局。导航美化</li>
 			<li class="justify">12月26号deqecraft工作室官网新增了声明</li>
+			<li class="justify">12月30号deqecraft工作室官网改成元旦特别版</li>
+			<h3>2024年</h3>
+			<li class="justify">1月5号deqecraft工作室官网删除元旦元素，修改了“项目”模块</li>
+			<li class="justify">1月6号deqecraft工作室官网首页新增marquee标签</li>
 		</ul>
 		<p>我们坚持以用户为中心，不断努力提升用户体验，希望能为广大用户带来更多快乐和乐趣。</p>
 		<p>然而我们工作室采用高度自由，无严格作品要求的制度，可能会出现令您不适的内容，请联系我<a href="#">3445205294@qq.com</a>我们会加以整改</p>
